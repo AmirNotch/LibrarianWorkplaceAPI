@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Domain
 {
@@ -11,5 +13,6 @@ namespace Domain
         public DateTime DateOfBirth { get; set; }
         public int NumberOfEvent { get; set; }
         public DateTime DateTimeOfEvent { get; set; }
+        public ICollection<Book> Books { get; set; } = new List<Book>();
     }
 }

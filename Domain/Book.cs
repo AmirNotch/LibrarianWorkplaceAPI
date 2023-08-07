@@ -14,5 +14,6 @@ namespace Domain
         public int NumberOfCopies { get; set; }
         public int NumberOfEvent { get; set; }
         public DateTime DateTimeOfEvent { get; set; }
+        public Reader Reader { get; set; }
     }
 }

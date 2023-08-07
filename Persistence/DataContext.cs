@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Persistence
 {
-    public sealed class DataContext : IdentityDbContext
+    public sealed class DataContext : DbContext
     {
-        public DataContext(DbContextOptions options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            Database.MigrateAsync();
+            //Database.MigrateAsync();
         }
         
         public DbSet<Reader> Readers { get; set; }
