@@ -13,7 +13,3 @@ C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\obj\Debug\net5.0\
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\obj\Debug\net5.0\Persistence.dll
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\obj\Debug\net5.0\ref\Persistence.dll
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\obj\Debug\net5.0\Persistence.pdb
-C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\bin\Debug\net5.0\Application.dll
-C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\bin\Debug\net5.0\Infrastructure.dll
-C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\bin\Debug\net5.0\Application.pdb
-C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Persistence\bin\Debug\net5.0\Infrastructure.pdb

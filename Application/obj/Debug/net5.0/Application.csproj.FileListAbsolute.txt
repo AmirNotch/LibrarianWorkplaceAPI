@@ -13,3 +13,5 @@ C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\obj\Debug\net5.0\
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\obj\Debug\net5.0\Application.dll
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\obj\Debug\net5.0\ref\Application.dll
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\obj\Debug\net5.0\Application.pdb
+C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\bin\Debug\net5.0\Persistence.dll
+C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\Application\bin\Debug\net5.0\Persistence.pdb
