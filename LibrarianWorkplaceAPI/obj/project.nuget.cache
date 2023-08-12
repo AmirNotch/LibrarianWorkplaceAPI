@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E8shL4eMq06OOqJMK1RvzyvcEMfQvqqAGhLzxv7hOxkGy0YRf0fblh7dITtpT+8DDa2Jz1X0uf5Osp3bg4r4qg==",
+  "dgSpecHash": "BWR9a8Id285n85tAlrD7+ktEm4OdALZtkH8cQBPXUkkj+2aZXvubDfrDzwP4yZCwaudMktGKoiQO7CuXR7at9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ibrag\\RiderProjects\\LibrarianWorkplaceAPI\\LibrarianWorkplaceAPI\\LibrarianWorkplaceAPI.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,8 @@
     "C:\\Users\\ibrag\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ibrag\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ibrag\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\ibrag\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
+    "C:\\Users\\ibrag\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.10\\npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
     "C:\\Users\\ibrag\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\ibrag\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\ibrag\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

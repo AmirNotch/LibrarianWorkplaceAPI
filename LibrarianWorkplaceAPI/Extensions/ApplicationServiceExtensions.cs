@@ -17,9 +17,15 @@ namespace LibrarianWorkplaceAPI.Extensions
             
             services.AddDbContext<DataContext>(opt =>
             {
-                opt.UseSqlServer(config.GetConnectionString("Default"),
+                opt.UseNpgsql(config.GetConnectionString("Default"),
                     b => b.MigrationsAssembly(typeof(DataContext).Assembly.FullName));
             });
+            
+            // services.AddDbContext<DataContext>(opt =>
+            // {
+            //     opt.UseSqlServer(config.GetConnectionString("Default"),
+            //         b => b.MigrationsAssembly(typeof(DataContext).Assembly.FullName));
+            // });
             
             services.AddMediatR(typeof(ListBooks.Handler).Assembly);
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
