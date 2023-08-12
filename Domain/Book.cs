@@ -14,8 +14,8 @@ namespace Domain
         public string VendorCode { get; set; }
         public DateTime YearOfPublishing { get; set; }
         public int NumberOfCopies { get; set; }
-        public int NumberOfEvent { get; set; }
-        public DateTime DateTimeOfEvent { get; set; }
+        public bool Exist { get; set; }
         public ICollection<BookReader> Readers { get; set; } = new List<BookReader>();
+        public ICollection<HistoryBook> HistoryBooks { get; set; }
     }
 }

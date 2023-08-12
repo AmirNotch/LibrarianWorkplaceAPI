@@ -18,8 +18,7 @@ namespace Application.Core
                 .ForMember(r => r.DateAdded, o => o.MapFrom(s => s.Reader.DateAdded))
                 .ForMember(r => r.DateOfChange, o => o.MapFrom(s => s.Reader.DateOfChange))
                 .ForMember(r => r.DateOfBirth, o => o.MapFrom(s => s.Reader.DateOfBirth))
-                .ForMember(r => r.NumberOfEvent, o => o.MapFrom(s => s.Reader.NumberOfEvent))
-                .ForMember(r => r.DateTimeOfEvent, o => o.MapFrom(s => s.Reader.DateTimeOfEvent));
+                .ForMember(r => r.NumberOfEvent, o => o.MapFrom(s => s.Reader.Exist));
         }
     }
 }

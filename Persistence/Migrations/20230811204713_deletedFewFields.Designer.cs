@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Persistence;
 
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230811204713_deletedFewFields")]
+    partial class deletedFewFields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,33 +71,6 @@ namespace Persistence.Migrations
                     b.ToTable("BookReaders");
                 });
 
-            modelBuilder.Entity("Domain.HistoryBook", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("BookId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Event")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("ReaderId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookId");
-
-                    b.HasIndex("ReaderId");
-
-                    b.ToTable("HistoryBooks");
-                });
-
             modelBuilder.Entity("Domain.Reader", b =>
                 {
                     b.Property<Guid>("Id")
@@ -141,33 +116,14 @@ namespace Persistence.Migrations
                     b.Navigation("Reader");
                 });
 
-            modelBuilder.Entity("Domain.HistoryBook", b =>
-                {
-                    b.HasOne("Domain.Book", "Book")
-                        .WithMany("HistoryBooks")
-                        .HasForeignKey("BookId");
-
-                    b.HasOne("Domain.Reader", "Reader")
-                        .WithMany("HistoryBooks")
-                        .HasForeignKey("ReaderId");
-
-                    b.Navigation("Book");
-
-                    b.Navigation("Reader");
-                });
-
             modelBuilder.Entity("Domain.Book", b =>
                 {
-                    b.Navigation("HistoryBooks");
-
                     b.Navigation("Readers");
                 });
 
             modelBuilder.Entity("Domain.Reader", b =>
                 {
                     b.Navigation("Books");
-
-                    b.Navigation("HistoryBooks");
                 });
 #pragma warning restore 612, 618
         }
