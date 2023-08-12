@@ -8,7 +8,6 @@ namespace Application.LibrarianWorkplace.DTO
         public DateTime DateAdded { get; set; }
         public DateTime DateOfChange { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public int NumberOfEvent { get; set; }
-        public DateTime DateTimeOfEvent { get; set; }
+        public bool Exist { get; set; }
     }
 }

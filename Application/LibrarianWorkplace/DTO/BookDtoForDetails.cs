@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace Application.LibrarianWorkplace.DTO
 {
-    public class BookDto
+    public class BookDtoForDetails
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
@@ -15,6 +13,5 @@ namespace Application.LibrarianWorkplace.DTO
         public DateTime YearOfPublishing { get; set; }
         public int NumberOfCopies { get; set; }
         public bool Exist { get; set; }
-        public ICollection<ReaderDto> Readers { get; set; } 
     }
 }
