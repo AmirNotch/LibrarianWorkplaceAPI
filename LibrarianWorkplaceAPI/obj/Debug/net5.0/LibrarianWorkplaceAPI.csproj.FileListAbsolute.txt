@@ -84,3 +84,5 @@ C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\obj\Deb
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\obj\Debug\net5.0\LibrarianWorkplaceAPI.genruntimeconfig.cache
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\bin\Debug\net5.0\Infrastructure.dll
 C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\bin\Debug\net5.0\Npgsql.dll
+C:\Users\ibrag\RiderProjects\LibrarianWorkplaceAPI\LibrarianWorkplaceAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

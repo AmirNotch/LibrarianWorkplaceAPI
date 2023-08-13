@@ -13,6 +13,6 @@ namespace Domain
         public DateTime DateOfBirth { get; set; }
         public bool Exist { get; set; }
         public ICollection<BookReader> Books { get; set; } = new List<BookReader>();
-        public ICollection<HistoryBook> HistoryBooks { get; set; }
+        //public ICollection<HistoryBook> HistoryBooks { get; set; }
     }
 }

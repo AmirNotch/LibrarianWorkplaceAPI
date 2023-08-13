@@ -11,6 +11,6 @@ namespace Application.LibrarianWorkplace.DTO
         public DateTime DateOfChange { get; set; }
         public DateTime DateOfBirth { get; set; }
         public bool Exist { get; set; }
-        public ICollection<BookDtoForDetails> Readers { get; set; } 
+        public ICollection<BookDtoForDetails> Books { get; set; } 
     }
 }

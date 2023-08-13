@@ -13,5 +13,7 @@ namespace Application.LibrarianWorkplace.DTO
         public DateTime YearOfPublishing { get; set; }
         public int NumberOfCopies { get; set; }
         public bool Exist { get; set; }
+        public string Event { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

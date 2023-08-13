@@ -1,23 +1,20 @@
-﻿using System;
-using System.Linq;
-using System.Threading;
+﻿using System.Threading;
 using System.Threading.Tasks;
 using Application.Core;
 using Application.LibrarianWorkplace.DTO;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
 namespace Application.LibrarianWorkplace
 {
-    public class DetailsReader
+    public class DetailsReaderByName
     {
         public class Query : IRequest<Result<ReaderDtoForDetails>>
         {
-            public Guid Id { get; set; }
+            public string Name { get; set; }
         }
 
         public class Handler : IRequestHandler<Query, Result<ReaderDtoForDetails>>
@@ -36,8 +33,8 @@ namespace Application.LibrarianWorkplace
             {
                 var reader = await _context.Books
                     .ProjectTo<ReaderDtoForDetails>(_mapper.ConfigurationProvider)
-                    .FirstOrDefaultAsync(x => x.Id == request.Id);
-                
+                    .FirstOrDefaultAsync(x => x.Name.Contains(request.Name));
+
                 return Result<ReaderDtoForDetails>.Success(reader);
             }
         }

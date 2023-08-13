@@ -16,6 +16,6 @@ namespace Domain
         public int NumberOfCopies { get; set; }
         public bool Exist { get; set; }
         public ICollection<BookReader> Readers { get; set; } = new List<BookReader>();
-        public ICollection<HistoryBook> HistoryBooks { get; set; }
+        //public ICollection<HistoryBook> HistoryBooks { get; set; }
     }
 }
