@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Application.Core;
 using Application.LibrarianWorkplace;
+using LibrarianWorkplaceAPI.Behaviors;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -14,7 +15,6 @@ namespace LibrarianWorkplaceAPI.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services,
             IConfiguration config)
         {
-            
             services.AddDbContext<DataContext>(opt =>
             {
                 opt.UseNpgsql(config.GetConnectionString("Default"),
@@ -29,6 +29,8 @@ namespace LibrarianWorkplaceAPI.Extensions
             
             services.AddMediatR(typeof(ListBooks.Handler).Assembly);
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+            services.AddTransient(typeof(IPipelineBehavior<,>),
+                typeof(LoggingBehavior<,>));
             return services;
         }
     }
