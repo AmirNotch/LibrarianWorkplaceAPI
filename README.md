@@ -20,3 +20,4 @@ Infrastructure библиотека где происходит логика с 
 )
 
 Команда для создание миграции = dotnet ef migrations add InitMigrations -p Persistence -s API
+![Onion](https://github.com/AmirNotch/LibrarianWorkplaceAPI/assets/69799846/c593d82d-2752-4918-b8f1-35949ef5b892)
