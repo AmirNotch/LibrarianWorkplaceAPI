@@ -20,7 +20,7 @@ namespace LibrarianWorkplaceAPI.Controllers
             return HandleResult(await Mediator.Send(new DetailsReaderByName.Query{Name = name}));
         }
         
-        [HttpPost]
+        [HttpPost("create-reader")]
         public async Task<IActionResult> CreateReader([FromBody]Reader reader)
         {
             return HandleResult(await Mediator.Send(new CreateReader.Command{Reader = reader}));
@@ -39,13 +39,13 @@ namespace LibrarianWorkplaceAPI.Controllers
             return HandleResult(await Mediator.Send(new DeleteReader.Command{Id = id}));
         }
         
-        [HttpPost]
+        [HttpPost("take-book")]
         public async Task<IActionResult> TakeBook([FromQuery]Guid readerGuid, Guid bookGuid)
         {
             return HandleResult(await Mediator.Send(new TakeBook.Command{ReaderGuid = readerGuid, BookGuid = bookGuid}));
         }
         
-        [HttpPost]
+        [HttpPost("give-book")]
         public async Task<IActionResult> GiveBook([FromQuery]Guid readerGuid, Guid bookGuid)
         {
             return HandleResult(await Mediator.Send(new GiveBook.Command{ReaderGuid = readerGuid, BookGuid = bookGuid}));
